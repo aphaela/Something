@@ -1,235 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AluraFlix Científico</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraFlix - Recomendador de Física</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #161b22;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #58a6ff;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ffa657;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 5px;
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>WissenschaftFlix - Catálogo de Física</h1>
+        <p>Recomendações científicas do canal <strong>Ciência Todo Dia</strong></p>
+    </header>
 
-  <header>
-    <h1>🎬 AluraFlix Científico</h1>
-    <p>Recomendações de vídeos sobre física e ciência</p>
-  </header>
+    <!-- Física Moderna -->
+    <section>
+        <h2>Física Moderna</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/BBJRFbrtXBM" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jmvz9YhiHjE" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/H9R2Cq0QGjY" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/qX0P8KJXfEY" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- COSMOLOGIA & UNIVERSO -->
-  <section>
-    <h2>🌌 Cosmologia & Universo</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/c2hAcRA20H4" title="Isso é tudo que NÃO sabemos sobre o UNIVERSO" frameborder="0" allowfullscreen></iframe>
-        <h3>Isso é tudo que NÃO sabemos sobre o UNIVERSO</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/2ZdCJ9tONL4" title="A Ilusão do Tempo" frameborder="0" allowfullscreen></iframe>
-        <h3>A Ilusão do Tempo</h3>
-      </div>
-    </div>
-  </section>
+    <!-- Relatividade -->
+    <section>
+        <h2>Relatividade</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/3a6dN7lN5lE" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Hj2sG3y6y6M" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/5vQ5T1nW6i4" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/GWkZ3RHPm6g" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- MISTÉRIOS DA CONSCIÊNCIA -->
-  <section>
-    <h2>🧠 Mistérios da Consciência</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/NH95XfWjSOw" title="Ninguém sabe onde está a CONSCIÊNCIA HUMANA" frameborder="0" allowfullscreen></iframe>
-        <h3>Ninguém sabe onde está a CONSCIÊNCIA HUMANA</h3>
-      </div>
-    </div>
-  </section>
+    <!-- Buracos Negros e Universo -->
+    <section>
+        <h2>Buracos Negros e Universo</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/IfK8n5kIX4o" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/9GdYZVnG0u4" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dtqKYnqgm1A" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/oG3uCdJ1CwY" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- FÍSICA & EXPERIMENTOS -->
-  <section>
-    <h2>🧪 Física & Experimentos</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/iNmC3BFcVtY" title="As 3 leis de Newton" frameborder="0" allowfullscreen></iframe>
-        <h3>As 3 leis de Newton</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/edSjg1JlL_k" title="A carta que QUEBROU a FÍSICA" frameborder="0" allowfullscreen></iframe>
-        <h3>A carta que QUEBROU a FÍSICA</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/1B6n8EQvSZM" title="O Experimento MAIS BIZARRO da FÍSICA" frameborder="0" allowfullscreen></iframe>
-        <h3>O Experimento MAIS BIZARRO da FÍSICA</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/jqPVnj74CcQ" title="É fisicamente IMPOSSÍVEL levantar desse jeito" frameborder="0" allowfullscreen></iframe>
-        <h3>É fisicamente IMPOSSÍVEL levantar desse jeito</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Yt-R80zFwjY" title="COMO aprender FÍSICA do ZERO!" frameborder="0" allowfullscreen></iframe>
-        <h3>COMO aprender FÍSICA do ZERO!</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/fUkKohYrZ4A" title="Explicando a gravidade sem usar força" frameborder="0" allowfullscreen></iframe>
-        <h3>Explicando a gravidade sem usar força</h3>
-      </div>
-    </div>
-  </section>
+    <!-- Grandes Cientistas e Teorias -->
+    <section>
+        <h2>Grandes Cientistas e Teorias</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/MIh1N0t4fAI" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jkBr4S7E1tA" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/JddipHeTt64" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/7JtF6Xtd2zA" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- CURSO DE FÍSICA BÁSICA -->
-  <section>
-    <h2>⚛️ Curso de Física Básica</h2>
-    <div class="video-grid">
-      <!-- Episódios 1 a 9, iguais aos anteriores -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/8Z4uT4w3lWA" title="O Que É Energia? | Episódio 1" frameborder="0" allowfullscreen></iframe>
-        <h3>O Que É Energia? | Episódio 1</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/X6nHgxkS7xg" title="A Teoria do Movimento | Episódio 2" frameborder="0" allowfullscreen></iframe>
-        <h3>A Teoria do Movimento | Episódio 2</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Wy7j1tM-b8w" title="Forças e Interações | Episódio 3" frameborder="0" allowfullscreen></iframe>
-        <h3>Forças e Interações | Episódio 3</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/OtybN_D7NwE" title="Gravitação | Episódio 4" frameborder="0" allowfullscreen></iframe>
-        <h3>Gravitação | Episódio 4</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/uqJtHZSw0kI" title="Energia Mecânica | Episódio 5" frameborder="0" allowfullscreen></iframe>
-        <h3>Energia Mecânica | Episódio 5</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Vd5oR0ewZuk" title="Calor e Termodinâmica | Episódio 6" frameborder="0" allowfullscreen></iframe>
-        <h3>Calor e Termodinâmica | Episódio 6</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/JjW9YjRzoxY" title="Ondas | Episódio 7" frameborder="0" allowfullscreen></iframe>
-        <h3>Ondas | Episódio 7</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Xy5u5s7yG8o" title="Óptica | Episódio 8" frameborder="0" allowfullscreen></iframe>
-        <h3>Óptica | Episódio 8</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/biIZy9lq-ws" title="Eletromagnetismo | Episódio 9" frameborder="0" allowfullscreen></iframe>
-        <h3>Eletromagnetismo | Episódio 9</h3>
-      </div>
-    </div>
-  </section>
+    <!-- Mecânica Quântica -->
+    <section>
+        <h2>Mecânica Quântica</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/3lfu8G8uVdQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/24j3pEo1vjU" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ZcID0B4Fiqg" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/TS8VcxwS1so" allowfullscreen></iframe>
+        </div>
+    </section>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AluraFlix Científico</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Astronomia -->
+    <section>
+        <h2>Astronomia</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/g38Y0dStJZQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/lw6qgKeD9xw" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/90d9Q9Gwa1s" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/UKQjWm3PRdI" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <header>
-    <h1>🎬 AluraFlix Científico</h1>
-    <p>Recomendações de vídeos sobre física e ciência</p>
-  </header>
+    <!-- Cosmologia -->
+    <section>
+        <h2>Cosmologia</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/ttbUOZaZfF8" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/0OjW8j9P4Hk" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/qOqA4fZc8fw" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/EzEoeNwjs1Q" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- COSMOLOGIA & UNIVERSO -->
-  <section>
-    <h2>🌌 Cosmologia & Universo</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/c2hAcRA20H4" title="Isso é tudo que NÃO sabemos sobre o UNIVERSO" frameborder="0" allowfullscreen></iframe>
-        <h3>Isso é tudo que NÃO sabemos sobre o UNIVERSO</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/2ZdCJ9tONL4" title="A Ilusão do Tempo" frameborder="0" allowfullscreen></iframe>
-        <h3>A Ilusão do Tempo</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- MISTÉRIOS DA CONSCIÊNCIA -->
-  <section>
-    <h2>🧠 Mistérios da Consciência</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/NH95XfWjSOw" title="Ninguém sabe onde está a CONSCIÊNCIA HUMANA" frameborder="0" allowfullscreen></iframe>
-        <h3>Ninguém sabe onde está a CONSCIÊNCIA HUMANA</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- FÍSICA & EXPERIMENTOS -->
-  <section>
-    <h2>🧪 Física & Experimentos</h2>
-    <div class="video-grid">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/iNmC3BFcVtY" title="As 3 leis de Newton" frameborder="0" allowfullscreen></iframe>
-        <h3>As 3 leis de Newton</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/edSjg1JlL_k" title="A carta que QUEBROU a FÍSICA" frameborder="0" allowfullscreen></iframe>
-        <h3>A carta que QUEBROU a FÍSICA</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/1B6n8EQvSZM" title="O Experimento MAIS BIZARRO da FÍSICA" frameborder="0" allowfullscreen></iframe>
-        <h3>O Experimento MAIS BIZARRO da FÍSICA</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/jqPVnj74CcQ" title="É fisicamente IMPOSSÍVEL levantar desse jeito" frameborder="0" allowfullscreen></iframe>
-        <h3>É fisicamente IMPOSSÍVEL levantar desse jeito</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Yt-R80zFwjY" title="COMO aprender FÍSICA do ZERO!" frameborder="0" allowfullscreen></iframe>
-        <h3>COMO aprender FÍSICA do ZERO!</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/fUkKohYrZ4A" title="Explicando a gravidade sem usar força" frameborder="0" allowfullscreen></iframe>
-        <h3>Explicando a gravidade sem usar força</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- CURSO DE FÍSICA BÁSICA -->
-  <section>
-    <h2>⚛️ Curso de Física Básica</h2>
-    <div class="video-grid">
-      <!-- Episódios 1 a 9, iguais aos anteriores -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/8Z4uT4w3lWA" title="O Que É Energia? | Episódio 1" frameborder="0" allowfullscreen></iframe>
-        <h3>O Que É Energia? | Episódio 1</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/X6nHgxkS7xg" title="A Teoria do Movimento | Episódio 2" frameborder="0" allowfullscreen></iframe>
-        <h3>A Teoria do Movimento | Episódio 2</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Wy7j1tM-b8w" title="Forças e Interações | Episódio 3" frameborder="0" allowfullscreen></iframe>
-        <h3>Forças e Interações | Episódio 3</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/OtybN_D7NwE" title="Gravitação | Episódio 4" frameborder="0" allowfullscreen></iframe>
-        <h3>Gravitação | Episódio 4</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/uqJtHZSw0kI" title="Energia Mecânica | Episódio 5" frameborder="0" allowfullscreen></iframe>
-        <h3>Energia Mecânica | Episódio 5</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Vd5oR0ewZuk" title="Calor e Termodinâmica | Episódio 6" frameborder="0" allowfullscreen></iframe>
-        <h3>Calor e Termodinâmica | Episódio 6</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/JjW9YjRzoxY" title="Ondas | Episódio 7" frameborder="0" allowfullscreen></iframe>
-        <h3>Ondas | Episódio 7</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Xy5u5s7yG8o" title="Óptica | Episódio 8" frameborder="0" allowfullscreen></iframe>
-        <h3>Óptica | Episódio 8</h3>
-      </div>
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/biIZy9lq-ws" title="Eletromagnetismo | Episódio 9" frameborder="0" allowfullscreen></iframe>
-        <h3>Eletromagnetismo | Episódio 9</h3>
-      </div>
-    </div>
-  </section>
-
+    <!-- Astrofísica -->
+    <section>
+        <h2>Astrofísica</h2>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/EWf7Ez5xvAQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/iwA8AwT9wKI" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/vXJXvn3yaBA" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/nG9F8QmV0Ms" allowfullscreen></iframe>
+        </div>
+    </section>
 </body>
 </html>
